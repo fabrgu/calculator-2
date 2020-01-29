@@ -59,18 +59,9 @@ def add_list(num_list):
 
 
 def subtract_list(num_list):
-    subtract_counter = num_list[0]
-    i = 1
-    while i < len(num_list):
-        subtract_counter -= num_list[i]
-        i += 1
-    return subtract_counter
+    return reduce(subtract, num_list)
 
 
 def mult_list(num_list):
-    mult_counter = num_list[0]
-    i = 1
-    while i < len(num_list):
-        mult_counter *= num_list[i]
-        i += 1
-    return mult_counter
+    return reduce(multiply, num_list)
+
