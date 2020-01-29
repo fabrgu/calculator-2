@@ -1,4 +1,5 @@
 """Math functions for calculator."""
+from functools import reduce
 
 
 def add(num1, num2):
@@ -54,10 +55,7 @@ def mod(num1, num2):
 
 
 def add_list(num_list):
-    add_counter = 0
-    for i in num_list:
-        add_counter += i
-    return add_counter
+    return reduce(add, num_list)
 
 
 def subtract_list(num_list):
