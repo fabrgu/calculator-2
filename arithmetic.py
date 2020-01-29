@@ -51,3 +51,28 @@ def mod(num1, num2):
     """Return the remainder of num / num2."""
 
     return num1 % num2
+
+
+def add_list(num_list):
+    add_counter = 0
+    for i in num_list:
+        add_counter += i
+    return add_counter
+
+
+def subtract_list(num_list):
+    subtract_counter = num_list[0]
+    i = 1
+    while i < len(num_list):
+        subtract_counter -= num_list[i]
+        i += 1
+    return subtract_counter
+
+
+def mult_list(num_list):
+    mult_counter = num_list[0]
+    i = 1
+    while i < len(num_list):
+        mult_counter *= num_list[i]
+        i += 1
+    return mult_counter
